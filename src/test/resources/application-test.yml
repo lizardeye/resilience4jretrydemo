@@ -1,0 +1,8 @@
+resilience4j.retry:
+  configs:
+    default:
+      maxAttempts: 3
+      waitDuration: 100
+  instances:
+    SERVICE:
+      baseConfig: default
